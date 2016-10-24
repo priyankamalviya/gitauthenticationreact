@@ -189,8 +189,8 @@
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'Input' },
-	        _react2.default.createElement('input', { type: this.props.type, name: this.props.name, placeholder: this.props.placeholder, required: true, autocomplete: 'false' }),
-	        _react2.default.createElement('label', { 'for': this.props.name })
+	        _react2.default.createElement('input', { type: this.props.type, name: this.props.name, placeholder: this.props.placeholder, required: true, autoComplete: 'false' }),
+	        _react2.default.createElement('label', { htmlFor: this.props.name })
 	      );
 	    }
 	  }]);
