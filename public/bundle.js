@@ -119,7 +119,11 @@
 
 	      return _react2.default.createElement(
 	        ReactCSSTG,
-	        { transitionName: 'animation', transitionAppear: true, transitionAppearTimeout: 500, transitionEnterTimeout: 500, transitionLeaveTimeout: 300 },
+	        { transitionName: 'animation',
+	          transitionAppear: true,
+	          transitionAppearTimeout: 500,
+	          transitionEnterTimeout: 500,
+	          transitionLeaveTimeout: 300 },
 	        component
 	      );
 	    }
@@ -229,7 +233,7 @@
 	  return Logo;
 	}(_react2.default.Component);
 
-	// Button to brind the modal back
+	// Button to bring the modal back
 
 
 	var ModalBack = function (_React$Component5) {

@@ -38,9 +38,12 @@ class Main extends React.Component {
     // const for React CSS transition declaration
     let component = this.state.isVisible ? <Modal onSubmit={ this.handleSubmit } key='modal'/> : <ModalBack onClick={ this.handleRemount } key='bringitback'/>;
 
-    return <ReactCSSTG transitionName="animation" transitionAppear={true} transitionAppearTimeout={500} transitionEnterTimeout={500} transitionLeaveTimeout={300}>
-             { component }
-           </ReactCSSTG>
+    return <ReactCSSTG transitionName="animation"
+    transitionAppear={true}
+    transitionAppearTimeout={500}
+    transitionEnterTimeout={500}
+    transitionLeaveTimeout={300}>
+             { component }</ReactCSSTG>
   }
 }
 
@@ -54,8 +57,7 @@ class Modal extends React.Component {
 
                 <button> <i className="fa fa-github"aria-hidden="true"></i>  Sign In</button>
               </form>
-                <a href='#'>Sign in using your Github account!</a>
-           </div>
+                <a href='#'>Sign in using your Github account!</a></div>
   }
 }
 
@@ -64,8 +66,7 @@ class Input extends React.Component {
   render() {
     return <div className='Input'>
               <input type={ this.props.type } name={ this.props.name } placeholder={ this.props.placeholder } required autoComplete='false'/>
-              <label htmlFor={ this.props.name } ></label>
-           </div>
+              <label htmlFor={ this.props.name } ></label></div>
   }
 
 }
@@ -75,12 +76,11 @@ class Logo extends React.Component {
   render() {
     return <div className="logo">
                 <i aria-hidden="true"></i>
-                <span> Github Notes </span>
-              </div>
+                <span> Github Notes </span></div>
   }
 }
 
-// Button to brind the modal back
+// Button to bring the modal back
 class ModalBack extends React.Component {
   render() {
     return <button className="bringitback" onClick={ this.props.onClick } key={ this.props.className }>Bring the modal back !</button>
